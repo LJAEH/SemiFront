@@ -30,7 +30,6 @@ span {
     box-sizing: border-box;
     overflow : hidden;
 }
-
 header {
     position : relative;
     min-width : 320px;
