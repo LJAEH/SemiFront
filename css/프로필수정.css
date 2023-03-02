@@ -180,6 +180,7 @@ section {
     background-color:  rgb(57, 41, 41);
 } 
 
+
 .introducebox > div > input {
     height : 100%;
     width : 100%;
@@ -188,6 +189,10 @@ section {
     outline : 0;
     font-size: 20px;
     color : white;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    
 }
 
 .introducebox > div > input::placeholder{
@@ -200,6 +205,11 @@ section {
     background-color:  gray;
     color : gray;
 
+}
+
+.leftpadding {
+    padding-left: 15px;
+    font-weight: bold;
 }
 
 .savebox{

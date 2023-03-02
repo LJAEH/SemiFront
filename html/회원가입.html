@@ -33,7 +33,7 @@
                                 <div class="idinput">
                                     <input type="text" placeholder="아이디을 입력해주세요">
                                     <div class="dupcheckbox">
-                                        <button class="dupcheck"><span>중복확인</span></button>
+                                        <button class="dupcheck" id="iddupcheck"><span>중복확인</span></button>
                                     </div>
                                 </div>
                             </div>
@@ -49,19 +49,43 @@
                                 <div class="pwinput2">
                                     <input type="text" placeholder="영문/숫자/특수문자 포함 8자리 이상 입력">
                                 </div>
-
-
                             </div>
                             <div class="nicknamewrap">
                                 <span>닉네임</span>
                                 <div class="nicknameinput">
                                     <input type="text" placeholder="한글 영어 숫자로 12자이내로 정해주세요">
                                     <div class="dupcheckbox">
-                                        <button class="dupcheck"><span>중복확인</span></button>
+                                        <button class="dupcheck" id="namedupcheck"><span>중복확인</span></button>
                                     </div>
                                 </div>
                             </div>
+                            <div class="genderbox">
+                                <span>성별</span>
+                                <div>
+                                    <br>
+                                    <label for="man"><span>남성</span></label> <input type="radio" name="man" id="man" value="gender">
+                                    <label for="woman"><span>여성</span></label> <input type="radio" name="woman" id="woman" value="gender">
+                                </div>
+
+                            </div>
                             <div class="birthwrap">
+                                <span>출생연도</span>
+                                <div class="birthbox">
+                                    <form action="">
+                                        <select name="birthyear">
+                                     
+                                            <option value="java"> JAVA
+                                     
+                                            <option value="css" selected> CSS
+                                     
+                                            <option value="html"> HTML
+                                     
+                                            <option value="c"> C
+                                     
+                                        </select>
+                                    </form>                       
+                                </div>
+                                
 
                             </div>
                         </div>
