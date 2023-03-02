@@ -22,29 +22,57 @@
                     </div>
                 </header>
                 <main id="contents">
-                    <section class="passwordbox">
+                    <section class="profilebox">
                         <span class="title">프로필수정</span>
                         <div> 
                             <i class="fa-solid fa-face-laugh-squint" id="profileimg">
                             </i>
                         </div>
-                        <a href="#">프로필사진변경</a>
+                        <a href="#">사진변경</a>
                         <span class="email1">가입시 입력한 email 주소</span>
                         <span class="email2">wogur5252@naver.com</span>
                         
                     </section>
+                    <section class="passwordbox">
+                        <div>
+                            <input type="password" class="currentPw" placeholder="현재 비밀번호">
+                        </div>
+                        <div>
+                            <input type="password" class="newPw1" placeholder="변경할 비밀번호">
+                        </div>
+                        <div>
+                            <input type="password" class="newPw2" placeholder="변경할 비밀번호 확인">
+                        </div>
+                      
+                    </section>
                     <section class="nicknamebox">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <a href="#">회원탈퇴 <i class="fa-solid fa-chevron-right"></i> </a>
-
+                        <div class="nicknamebar">
+                            <span>닉네임</span>
+                            <span id="nicknamebite">5/20</span>
+                        </div>
+                        <div class="nicknameinsert">
+                            <input type="text">
+                        </div>
+                       
                     </section>
                     <section class="introducebox">
-
+                        <div class="introducebar">
+                            <span>소개글</span>
+                            <span id="introducebite">0/100</span>
+                        </div>
+                        <div class="introduceinsert">
+                            <input type="text" placeholder="아무글이나 써도 좋습니다.">
+                        </div>
                     </section>
+
+                    
+                    <a href="#">회원탈퇴 <i class="fa-solid fa-chevron-right"></i> </a>
+
+
+                    <hr class="line" color="gray">
+
                     <section class="savebox">
-                        <button>저장</button>
+                        <button><span>저장</span></button>
                     </section>
                 </main>
             </div>
