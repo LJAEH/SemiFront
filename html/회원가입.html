@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/회원가입.css">
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+    crossorigin="anonymous"></script>
+
     <script src="https://kit.fontawesome.com/47910b9f42.js" crossorigin="anonymous"></script>
     
     <title>회원가입</title>
@@ -40,14 +43,14 @@
                             <div class="pwwrap1">
                                 <span>비밀번호</span>
                                 <div class="pwinput1">
-                                    <input type="text" placeholder="영문/숫자/특수문자 포함 8자리 이상 입력">
+                                    <input type="password" placeholder="영문/숫자/특수문자 포함 8자리 이상 입력">
                                 </div>
 
                             </div>
                             <div class="pwwrap1">
                                 <span>비밀번호확인</span>
                                 <div class="pwinput2">
-                                    <input type="text" placeholder="영문/숫자/특수문자 포함 8자리 이상 입력">
+                                    <input type="password" placeholder="영문/숫자/특수문자 포함 8자리 이상 입력">
                                 </div>
                             </div>
                             <div class="nicknamewrap">
@@ -62,7 +65,6 @@
                             <div class="genderbox">
                                 <span>성별</span>
                                 <div>
-                                    <br>
                                     <label for="man"><span>남성</span></label> <input type="radio" name="man" id="man" value="gender">
                                     <label for="woman"><span>여성</span></label> <input type="radio" name="woman" id="woman" value="gender">
                                 </div>
@@ -71,19 +73,10 @@
                             <div class="birthwrap">
                                 <span>출생연도</span>
                                 <div class="birthbox">
-                                    <form action="">
-                                        <select name="birthyear">
-                                     
-                                            <option value="java"> JAVA
-                                     
-                                            <option value="css" selected> CSS
-                                     
-                                            <option value="html"> HTML
-                                     
-                                            <option value="c"> C
-                                     
-                                        </select>
-                                    </form>                       
+                                    <div>                        
+                                        <select name="yy" id="year" class="yearbox"></select>
+                                        <select name="mm" id="month" class="monthbox"></select>
+                                    </div>        
                                 </div>
                                 
 
@@ -100,6 +93,24 @@
         </div>
 
     </div>
-    
+
+    <script>
+    $(document).ready(function(){            
+    var now = new Date();
+    var year = now.getFullYear();
+    var mon = (now.getMonth() + 1) > 9 ? ''+(now.getMonth() + 1) : '0'+(now.getMonth() + 1); 
+    var day = (now.getDate()) > 9 ? ''+(now.getDate()) : '0'+(now.getDate());           
+    //년도 selectbox만들기               
+    for(var i = 2023 ; i >= 1920 ; i--) {
+        $('#year').append('<option value="' + i + '">' + i + '년</option>');    
+    }
+
+    // 월별 selectbox 만들기            
+    for(var i=1; i <= 12; i++) {
+        var mm = i > 9 ? i : "0"+i ;            
+        $('#month').append('<option value="' + mm + '">' + mm + '월</option>');    
+    }
+    })
+    </script>
 </body>
 </html>
