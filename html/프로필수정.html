@@ -8,10 +8,14 @@
     
     <script src="https://kit.fontawesome.com/47910b9f42.js" crossorigin="anonymous"></script>
     
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+
     <title>프로필수정</title>
 </head>
 <body>
-    <div id="movie">
+    <div id="movieSourcing">
         <div id="layout">
             <div id="root">
                 <header>
@@ -38,30 +42,33 @@
                             <input type="password" class="currentPw" placeholder="현재 비밀번호">
                         </div>
                         <div>
-                            <input type="password" class="newPw1" placeholder="변경할 비밀번호">
+                            <input type="password" class="newPw1" id="newPw1" placeholder="변경할 비밀번호">
                         </div>
-                        <div>
-                            <input type="password" class="newPw2" placeholder="변경할 비밀번호 확인">
-                        </div>
-                      
+                        <div class="passwordboxdiv3">
+                            <input type="password" class="newPw2" id="newPw2" placeholder="변경할 비밀번호 확인">
+                            <span id="pwCheck"></span>
+                        </div> 
                     </section>
+                    <script>
+  
+                    </script>
                     <section class="nicknamebox">
                         <div class="nicknamebar">
                             <span class="leftpadding">닉네임</span>
-                            <span id="nicknamebite">5/20</span>
+                            <span id="nicknamebite"><span class="nicknameCounter">0</span>/20</span>
                         </div>
                         <div class="nicknameinsert">
-                            <input type="text">
+                            <textarea id="nicknameArea" placeholder="바꿔도됩니다"></textarea>
                         </div>
                        
                     </section>
                     <section class="introducebox">
                         <div class="introducebar">
                             <span class="leftpadding">소개글</span>
-                            <span id="introducebite">0/100</span>
+                            <span id="introducebite"><span class="introCounter">0</span>/100</span>
                         </div>
                         <div class="introduceinsert">
-                            <input type="text" placeholder="아무글이나 써도 좋습니다.">
+                            <textarea name="introduceArea" id="introduceArea" placeholder="아무글이나 적어도 좋습니다."></textarea>
                         </div>
                     </section>
 
@@ -72,13 +79,15 @@
                     <hr class="line" color="gray">
 
                     <section class="savebox">
-                        <button><span>저장</span></button>
+                        <button id="saveBtn"><span>저장</span></button>
                     </section>
                 </main>
             </div>
         </div>
 
     </div>
+
+    <script src="/js/프로필수정.js"></script>
     
 </body>
 </html>

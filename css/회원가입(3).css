@@ -100,7 +100,7 @@ section {
     font-weight: bold;
 }
 
-.dupcheckbox {
+.certificationbox {
     display : flex;
     flex-direction: column;
     text-align: center;
@@ -108,7 +108,7 @@ section {
 
 }
 
-.dupcheck {
+.certification {
     margin : auto;
     background-color: rgb(175, 161, 158);
     height : 30px;
@@ -133,6 +133,20 @@ section {
     font-size: 20px;
     font-weight: bold;
     
+}
+
+#pwword {
+    display: flex;
+    justify-content: space-between;
+}
+#pwword > span:nth-of-type(1){
+    font-weight: bold;
+    font-size: 20px;
+    width: 50%;
+}
+#pwCheck {
+    width: 50%;
+    text-align: right;
 }
 
 .pwinput2 {

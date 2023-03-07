@@ -121,6 +121,22 @@ section {
     color : white;
 }
 
+.passwordboxdiv3{
+    display : flex; 
+    justify-content: space-between;
+}
+
+.newPw2 {
+    width: 40%;
+}
+
+#pwCheck {
+    width: 60%;
+    text-align: right;
+    line-height: 50px;
+}
+
+
 .passwordbox > a {
     margin : 8px 0;
 }
@@ -138,21 +154,22 @@ section {
 }
 
 .nicknameinsert {
-    padding : 0 24px;
+    padding : 16px 24px;
     margin : 8px 0;
     height : 60px;
     border-radius: 15px;
     background-color:  rgb(57, 41, 41);
 } 
 
-.nicknamebox > div > input {
+.nicknamebox > div > textarea {
     height : 100%;
     width : 100%;
     background-color: transparent;
     border-style: none;
     outline : 0;
     font-size: 20px;
-    color : white;
+    color : rgb(162, 148, 148);
+    font-weight: bold;
 }
 .passwordbox > div > input::placeholder {
     color : rgb(162, 156, 156);
@@ -173,7 +190,7 @@ section {
 }
 
 .introduceinsert {
-    padding : 0 24px;
+    padding : 15px 24px;
     margin : 8px 0;
     height : 140px;
     border-radius: 15px;
@@ -181,23 +198,26 @@ section {
 } 
 
 
-.introducebox > div > input {
+#introduceArea {
     height : 100%;
     width : 100%;
     background-color: transparent;
     border-style: none;
     outline : 0;
     font-size: 20px;
-    color : white;
+    color : rgb(162, 148, 148);
+    font-weight: bold;
     box-sizing: border-box;
     -webkit-box-sizing:border-box;
     -moz-box-sizing: border-box;
     
+    
+    
 }
 
-.introducebox > div > input::placeholder{
-    color:  rgb(194, 185, 185);
-    line-height: 150px;
+textarea::placeholder{
+    color:  rgb(162, 148, 148);
+
 }
 
 .line {
