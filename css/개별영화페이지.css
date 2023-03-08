@@ -1,0 +1,115 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+span {
+    color: white;
+}
+
+#root {
+    position : relative;
+    min-width : 320px;
+    background-color: black;
+}
+
+#contents {
+    position : relative;
+    min-width : 320px;
+    background-color: black;
+    max-width: 700px;
+    margin : 0 auto;
+    box-sizing: border-box;
+    overflow : hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position : relative;
+    min-width : 320px;
+    background-color: black;
+    display : flex;
+    align-items: center;
+}
+
+header > div {
+    position : relative;
+    
+    max-width : 800px;
+    display : flex;
+}
+
+.backpage {
+    margin-top: 30px;
+    margin-left: 30px;
+    display : flex;
+}
+
+#backpageimg {
+    font-size: 30px;
+}
+
+section {
+    display : block;
+}
+
+#contents > div {
+    margin : 10px 0;
+}
+
+.mainContainer {
+    display : flex;
+    
+}
+
+.poster {
+    width : 45%;
+    min-width: none;
+    padding : 10px;
+}
+
+#posterImg {
+    width : 100%;
+}
+.movieInfo {
+    width : 55%;
+}
+
+.bold2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.previewbox {
+    margin : 10px;
+    padding: 15px;
+    background: rgb(57, 41, 41);
+    border-radius: 6px;
+}
+
+.actorbox {
+    display : flex;
+    flex-direction: column;
+    width : 15%;
+}
+.actorbox > span {
+    text-align: center;
+}
+
+
+#director {
+    width : 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.everyone {
+    margin : 10px;
+    display :flex;
+    justify-content: space-between;
+}

@@ -62,7 +62,7 @@ section {
     font-size: 20px;
 }
 
-.signup {
+.pwSearch {
     display : flex;
     text-align: center;
     margin : 16px auto 30px;
@@ -84,16 +84,17 @@ section {
 .infomation > div {
     display : flex;
     flex-direction: column;
+    margin : 15px 0;
 }
 
-.idinput{
+.id {
     margin : 10px 0; 
     display : flex;
     justify-content: left;
 }
 
-.idinput > input {
-    width : 80%;
+.id > input {
+    width : 100%;
     height : 50px;
     margin-right: 5%;
     font-size: 20px;
@@ -101,7 +102,40 @@ section {
     border-radius: 5px;
 }
 
-.dupcheckbox {
+
+.email{
+    margin : 10px 0; 
+    display : flex;
+    justify-content: left;
+}
+
+.email > input {
+    width : 100%;
+    height : 50px;
+    margin-right: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+
+.certification{
+    margin : 10px 0; 
+    display : flex;
+    justify-content: left;
+}
+
+.certification > input {
+    width : 75%;
+    height : 50px;
+    margin-right: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.certificationbox {
     display : flex;
     flex-direction: column;
     text-align: center;
@@ -109,102 +143,31 @@ section {
 
 }
 
-.dupcheck {
+#certificationbtn {
     margin : auto;
     background-color: rgb(175, 161, 158);
-    height : 30px;
+    height : 100%;
     width : 100%;
     border-radius: 5px;
     border-style: none;
     cursor: pointer;
 }
 
-.pwwrap1{
-    margin : 15px 0; 
-    display : flex;
-    justify-content: left;
-}
-.pwinput1 {
-    margin : 10px 0; 
-}
-
-.pwinput1 > input {
-    width : 100%;
-    height : 50px;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 5px;
-    
-}
-
-#pwword {
-    display: flex;
-    justify-content: space-between;
-}
-#pwword > span:nth-of-type(1){
-    font-weight: bold;
-    font-size: 20px;
-    width: 50%;
-}
-#pwCheck {
-    width: 50%;
-    text-align: right;
-}
-
-.pwinput2 {
-    margin : 10px 0; 
-}
-
-.pw2wrap{
-    display : flex;
-    justify-content: left;
-}
-
-.pwinput2 > input {
-    width : 100%;
-    height : 50px;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-
-.nicknameinput{
-    margin : 10px 0; 
-    display : flex;
-    justify-content: left;
-}
-
-.nicknameinput > input {
-    width : 80%;
-    height : 50px;
-    margin-right: 5%;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 5px;
-}
 
 input::placeholder {
     font-size: 16px;
     padding-left: 15px;
 }
 
-input {
-    border-radius: 5px;
-}
-
-
-.line {
+hr {
     margin : 40px 0;
-    background-color:  gray;
-    color : gray;
-
 }
+
 
 .savebox{
     display : flex;
     flex-direction: column; 
-    margin : 10px auto 80px;
+    margin : 60px auto 80px;
 }
 
 .savebox > button {
@@ -218,41 +181,4 @@ input {
     border-radius: 15px;
     font-weight: bold;
     cursor: pointer;
-}
-
-.genderbox {
-    margin : 15px 0; 
-    display : flex;
-    justify-content: left;
-
-}
-
-.birthwrap{
-    margin : 15px 0; 
-    display : flex;
-    justify-content: left;
-}
-
-.birthbox {
-    margin : 10px 0; 
-}
-
-.birthyear{
-    width : 100%;
-    height : 50px;
-    margin-right: 5%;
-}
-
-.yearbox {
-    width : 200px;
-    height : 50px;
-    font-size: 20px;
-    border-radius: 5px;
-}
-.monthbox {
-    width : 100px;
-    height : 50px;
-    font-size: 20px;
-    margin-left: 10px;
-    border-radius: 5px;
 }
