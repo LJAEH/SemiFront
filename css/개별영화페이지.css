@@ -77,9 +77,129 @@ section {
 #posterImg {
     width : 100%;
 }
-.movieInfo {
+.movieInfoBox {
     width : 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 20px;
 }
+
+.movieInfoBox > div {
+}
+
+.titleBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+#movieTitle {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#engBar > span {
+    font-size: 14px;
+    color: rgb(166, 162, 162);
+}
+
+
+tr {
+}
+td {
+    padding: 1px;
+    padding-right: 5px;
+    
+}
+
+td > span{ 
+    text-align: left;
+}
+
+.genreBox{
+    display: flex;
+
+}
+.genreBox > div {
+    margin : 5px;
+    border-radius: 30px;
+    height : 25px;
+    background-color: rgb(137, 103, 99);
+}
+.genreBox > div > span {
+    padding: 10px 13px;
+}
+.scoreBox {
+    display : flex;
+}
+#scoreBar {
+    border-radius: 8px;
+    background-color: rgb(208, 208, 208);
+    height : 50px;
+    width : 75%;
+}
+
+#score {
+    border-radius: 8px;
+    background-color: springgreen;
+    height : 50px;
+    width : 92%;
+    display: flex;
+} 
+
+#score > span {
+    font-size: 18px;
+    font-weight: bold;
+    margin : auto;
+    margin-left: 5px;
+}
+#wannasee {
+    width : 25%;
+    display : flex;
+    justify-content: center;
+}
+#wannasee > a {
+    margin : auto;
+    color: pink;
+    font-size: 35px;
+}
+
+.writeBox {
+    display : flex;
+}
+#lifeMovie {
+    background-color: rgb(41, 128, 185);
+    border-radius: 10px;
+    width : 50%;
+    height: 60px;
+
+    padding: 0 10px;
+    margin: 0 10px;
+    margin-left : 0px;
+    
+    color : white;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+}
+#reviewWrite{
+    background-color: rgb(206, 186, 158);
+    border-radius: 10px;
+    width : 40%;
+    height: 60px;
+    margin: 0 10px;
+    color : white;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
 
 .bold2 {
     font-weight: bold;
